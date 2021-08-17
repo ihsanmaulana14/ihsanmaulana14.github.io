@@ -1,8 +1,2 @@
-# Responsive Website Restaurant
-## [Watch it on youtube](https://youtu.be/5RIFrZEjURA)
-### Responsive Website Restaurant
-Nice design of a responsive restaurant website 🥗 . It contains a header, home, about, services, menu, app, contact and a footer. It also has a fully developed light/dark mode 🌓 first for mobile then for desktop.
-
-Don't forget to join the channel for more videos like this.
-[Bedimcode](https://www.youtube.com/c/Bedimcode)
-# ihsanmaulana14.github.io
+### this my personal portfolio site ihsanmaulana14.github.io
+see live by click [ihsanmaulana14.githu.io](https://ihsanmaulana14.github.io/)
