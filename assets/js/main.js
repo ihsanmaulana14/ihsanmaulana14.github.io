@@ -115,9 +115,10 @@ sr.reveal(`.home__data, .home__img,
     interval: 200
 })
 
+
 /*==================== About Section Tabs ====================*/
-(() => {
-    const aboutSection = document.querySelector(".about")
+
+    const aboutSection = document.querySelector(".about-content")
     tabsContainer = document.querySelector(".about-tabs")
 
     tabsContainer.addEventListener("click", (event) => {
@@ -126,17 +127,16 @@ sr.reveal(`.home__data, .home__img,
             const target = event.target.getAttribute('data-target');
 
             // deactive existing active 'tab-item'
-            tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active")
+            tabsContainer.querySelector(".active").classList.remove("active")
             // active new "tab-item"
-            event.target.classList.add("active", "outer-shadow")
+            event.target.classList.add("active")
 
             // deactive existing active 'tab-content'
-            aboutSection.querySelector('.tab-content.active').classList.remove('active')
+            aboutSection.querySelector('.tab-content.active').classList.remove("active")
             // activate new 'tab-content'
             aboutSection.querySelector(target).classList.add('active')
         }
     })
-})();
 
 function bodyScrollingToggle() {
     document.body.classList.toggle('hidden-scrolling')

@@ -485,8 +485,19 @@ img.logo__img {
   text-align: center;
 }
 
+.about-content .tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+
 .about-tabs .tab-item.active {
   color: var(--first-color);
+}
+
+.about-content .tab-content.active {
+  display: block;
+  animation: fadeInTop 1s ease;
 }
 .about-tabs .tab-item {
   display: inline-block;
@@ -530,6 +541,12 @@ img.logo__img {
   font-weight: 500;
   color: var(--text-black-600);
   margin-top: -40px;
+}
+
+.about-section .timeline {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
 }
 
 /*========== SERVICES ==========*/
@@ -795,6 +812,13 @@ img.logo__img {
   .contact__button {
     justify-self: center;
   }
+
+  .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -826,6 +850,13 @@ img.logo__img {
   }
   .contact__button {
     justify-self: center;
+  }
+
+  .about-section .skills .skill-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin-bottom: 40px;
   }
 }
 
@@ -965,7 +996,25 @@ img.logo__img {
     margin: 0 var(--mb-1) 0 0;
   }
 
-  .nav__link:hover::after {
+  .nav__link.line {
+    display: block;
+    border-bottom: 3px solid #2b93bd;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  /* Active menu */
+  .active-link {
+    color: var(--first-color);
+    /* display: block; */
+    border-bottom: 3px solid #2b93bd;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  /* .nav__link.line:hover::after:active {
     content: "";
     display: block;
     border-bottom: 3px solid #2b93bd;
@@ -973,16 +1022,7 @@ img.logo__img {
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: -8px;
-  }
-  .nav__link:hover::after:active {
-    content: "";
-    display: block;
-    border-bottom: 3px solid #2b93bd;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
+  } */
 
   /* home */
   .home__img img {
