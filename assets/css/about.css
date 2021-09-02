@@ -1,0 +1,111 @@
+/*========== ABOUT ==========*/
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: var(--mb-3);
+}
+
+.about__description span {
+  font-weight: 800;
+}
+
+.about__img {
+  width: 280px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.about-tabs {
+  padding: 30px 2px 40px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about-content .tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+
+.about-tabs .tab-item.active {
+  color: var(--first-color);
+}
+
+.about-content .tab-content.active {
+  display: block;
+  animation: fadeInTop 1s ease;
+}
+.about-tabs .tab-item {
+  display: inline-block;
+  margin: 0 0px 30px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: var(--text-black-600);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.skills .skill-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.skills .skill-item .progress {
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.skills .skill-item .progress-bar {
+  background-color: var(--text-color);
+  height: 6px;
+  left: 7px;
+  top: 7px;
+  position: absolute;
+  border-radius: 10px;
+}
+.skills .skill-item .progress-bar span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-black-600);
+  margin-top: -40px;
+}
+
+.about-section .timeline {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 576px) {
+  .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about__img,
+  .app__img {
+    width: 280px;
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+.social__list {
+  display: flex;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -4,69 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <!--========== favicon ==========-->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
 
     <!-- fb & Whatsapdiv->
 
     <!-- Site Name, Title, and Description to be displayed -->
-    <meta property="og:site_name" content="Ihsan Maulana - Personal Portfolio">
-    <meta property="og:title" content="Ihsan Maulana- Personal Portfolio">
-    <meta property="og:description"
-      content="Seorang Web Developer yang berasal dari Indonesia. 'Web Developer' yang berorientasi pada detail, data dan terorganisir dengan pengalaman lebih dari 1 tahun dalam merancang dan mengembangkan aplikasi/dynamic web applications, dan kemampuan untuk bekerja dengan tim.">
+    <meta
+      property="og:site_name"
+      content="Ihsan Maulana - Personal Portfolio"
+    />
+    <meta property="og:title" content="Ihsan Maulana- Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Seorang Web Developer yang berasal dari Indonesia. 'Web Developer' yang berorientasi pada detail, data dan terorganisir dengan pengalaman lebih dari 1 tahun dalam merancang dan mengembangkan aplikasi/dynamic web applications, dan kemampuan untuk bekerja dengan tim."
+    />
 
     <!-- Image to display -->
-    <meta property="og:image" content="img/zainimg.jpg">
+    <meta property="og:image" content="img/zainimg.jpg" />
     <!-- No need to change anything here -->
     <meta property="og:type" content="website" />
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:type" content="image/jpeg" />
     <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApdiv->
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="315">
     <!-- Website to visit when clicked in fb or WhatsApp-->
-    <meta property="og:url" content="https://ihsanmaulana14.github.io">
+    <meta property="og:url" content="https://ihsanmaulana14.github.io" />
 
     <!--========== ICONSCOUT ICONS ==========-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!--========== BOX ICONS ==========-->
     <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--========== BOX ICONS ==========-->
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
 
     <title>Ihsan Maulana - Personal Portfolio</title>
   </head>
-  <body class="">
+  <body>
     <!--========== Preloader start ==========-->
-    <div class='loader'>
+    <div class="loader">
       <div class="bg"></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
     </div>
-  <!--========== Preloader end ==========-->
+    <!--========== Preloader end ==========-->
 
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
 
-
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
-      <nav class="nav bd-container">
+      <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img width="30px" height="40px" class="logo_img" src="/assets/img/favicon/favicon-32x32.png" alt="img-logo">
+          <img
+            width="30px"
+            height="40px"
+            class="logo_img"
+            src="/assets/img/favicon/favicon-32x32.png"
+            alt="img-logo"
+          />
         </a>
 
         <div class="nav__menu" id="nav-menu">
@@ -74,86 +108,188 @@
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
                 <i class="uil uil-estate nav__icon"></i> Home
+                <span class="line__bottom line-active"></span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
                 <i class="uil uil-user nav__icon"></i> About
+                <span class="line__bottom"></span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link"> 
-                <i class="uil uil-file-alt nav__icon"></i> Skills</a>
+              <a href="#services" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+                <span class="line__bottom"></span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> 
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services</a>
+              <a href="#" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                <span class="line__bottom"></span>
+              </a>
             </li>
             <li class="nav__item">
               <a href="#menu" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i> Portfolio
+                <span class="line__bottom"></span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact us</a>
+                <i class="uil uil-message nav__icon"></i> Contact us
+                <span class="line__bottom"></span>
+              </a>
             </li>
 
-            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+            <!-- <li><i class="bx bx-moon change-theme" id="theme-button"></i></li> -->
           </ul>
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
-          <i class="uil uil-bars"></i>
+          <!-- <i class="uil uil-bars"></i> -->
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <header class="header__setting">
+      <nav class="nav__set container">
+        <div class="nav__theme">
+          <i class="bx bx-moon" id="theme-button"></i>
         </div>
       </nav>
     </header>
 
     <main class="l-main">
       <!--========== HOME ==========-->
-      <section class="home section bd-container" id="home">
+      <section class="home section container" id="home">
+        <div class="paralax">
+          <img
+            src="/assets/img/Paralax/1.png"
+            d-speed="-2"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/2.png"
+            d-speed="5"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/3.png"
+            d-speed="-4"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/4.png"
+            d-speed="7"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/7.png"
+            d-speed="-5"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/8.png"
+            d-speed="9"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/9.png"
+            d-speed="6"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/10.png"
+            d-speed="2"
+            alt="px1"
+            class="layer"
+          />
+          <img
+            src="/assets/img/Paralax/12.png"
+            d-speed="-6"
+            alt="px1"
+            class="layer"
+          />
+        </div>
         <div class="home__container bd-grid">
           <div class="home__data">
             <h1 class="home__desc">Hi,</h1>
             <h1 class="home__title">I'am Ihsan Maulana</h1>
-            <h2 class="home__subtitle">
-              Front-End Developer
-            </h2>
-            <a href="#about" class="button button--flex">More About Me <i class="uil uil-arrow-down home__icon"></i></a>
+            <h2 class="home__subtitle">Front-End Developer</h2>
+            <a href="#about" class="button button--flex">
+              More About Me
+              <!-- <i class="uil uil-arrow-down home__icon"></i> -->
+              <i class="bx bxs-chevron-down home__icon"></i>
+            </a>
           </div>
           <div class="home__img">
             <div class="img__box inner__shadow">
-              
-              <img src="assets/img/ihsan-photo.jpg" alt="myphoto" class="outer__shadow" />
+              <img
+                src="assets/img/ihsan-photo.jpg"
+                alt="myphoto"
+                class="outer__shadow"
+              />
             </div>
             <!-- <div class='circle1'></div> -->
-            
           </div>
         </div>
       </section>
 
       <!--========== ABOUT ==========-->
-      <section class="about section bd-container" id="about">
+      <section class="about section container" id="about">
         <span class="section-subtitle">Main Info</span>
-        <h2 class=" section-title">
-          About Me
-        </h2>
+        <h2 class="section-title">About Me</h2>
         <div class="about__container bd-grid">
           <div class="about__data">
-            
             <p class="about__description">
-              <span>Hi, I'am Ihsan Maulana.</span> We cook the best food in the entire city, with excellent customer
-              service, the best meals and at the best price, visit us.
+              <span>Hi, I'am Ihsan Maulana.</span> We cook the best food in the
+              entire city, with excellent customer service, the best meals and
+              at the best price, visit us.
             </p>
             <a href="#" class="button">Explore history</a>
           </div>
 
           <img src="assets/img/ihsan-photo-2.png" alt="" class="about__img" />
+          <div class="about__social">
+            <ul class="social__list grid">
+              <li class="social__icon">
+                <a href="https://github.com/ihsanmaulana14/" class="nav__link">
+                  <i class="uil uil-github nav__icon"></i>
+                </a>
+              </li>
+              <li class="social__icon">
+                <a href="#about" class="nav__link">
+                  <i class="uil uil-user nav__icon"></i>
+                  <span class="line__bottom"></span>
+                </a>
+              </li>
+              <li class="social__icon">
+                <a href="#services" class="nav__link">
+                  <i class="uil uil-file-alt nav__icon"></i>
+                  <span class="line__bottom"></span>
+                </a>
+              </li>
+              <li class="social__icon">
+                <a href="#" class="nav__link">
+                  <i class="uil uil-briefcase-alt nav__icon"></i>
+                  <span class="line__bottom"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <!--========== SERVICES ==========-->
-      <section class="about section bd-container" id="services">
+      <!--========== SKILLS==========-->
+      <section class="about section container" id="services">
         <div class="about-tabs">
           <span class="tab-item active" data-target=".skills">Skills</span>
           <span class="tab-item" data-target=".experience">Experience</span>
@@ -166,7 +302,6 @@
           <div class="row">
             <div class="skills tab-content active">
               <div class="row">
-
                 <!-- Skill Item start -->
 
                 <div class="skill-item">
@@ -224,19 +359,17 @@
                 </div>
 
                 <!-- Skill Item end -->
-
               </div>
             </div>
           </div>
           <!-- Skills end -->
-          
+
           <!-- Experience start -->
           <div class="row">
             <div class="experience tab-content">
               <div class="row">
                 <div class="timeline">
                   <div class="row">
-
                     <!-- Timeline item start -->
 
                     <div class="timeline-item">
@@ -246,9 +379,12 @@
                         <h3>Graphic Designer</h3>
                         <h4>La Mona Clinic</h4>
                         <!-- <p>Bertanggung jawab untuk membuat gambar yang menyenangkan secara estetika yang menyertai teks tertulis menggunakan aplikasi Illustrator dan Photoshop. Sedikit banyak juga menangani Marketing/Iklan menggunakan Facebook Ads.</p> -->
-                        <p>Responsible for creating aesthetically pleasing images accompanying written text using
-                          Illustrator and Photoshop applications. More or less also handle Marketing / Ads using Facebook
-                          Ads.</p>
+                        <p>
+                          Responsible for creating aesthetically pleasing images
+                          accompanying written text using Illustrator and
+                          Photoshop applications. More or less also handle
+                          Marketing / Ads using Facebook Ads.
+                        </p>
                       </div>
                     </div>
 
@@ -259,8 +395,11 @@
                         <h3>Programmer</h3>
                         <h4>Goodeva Technology</h4>
                         <!-- <p>Pelatihan sekaligus mengerjakan 'real project' menggunakan Framework Laravel 7. Mengerjakan task-task dan debugging FrontEnd serta BackEnd.</p> -->
-                        <p>Training as well as working on 'real projects' using the Laravel 7 Framework. Doing FrontEnd and
-                          BackEnd tasks and debugging.</p>
+                        <p>
+                          Training as well as working on 'real projects' using
+                          the Laravel 7 Framework. Doing FrontEnd and BackEnd
+                          tasks and debugging.
+                        </p>
                       </div>
                     </div>
 
@@ -271,26 +410,27 @@
                         <h3>Programmer</h3>
                         <h4>PT. Bangun Kreatif Abadi</h4>
                         <!-- <p>Bertanggung jawab untuk mengelola pertukaran data antara server dan pengguna menggunakan JavaScript Framework seperti NodeJS dan ReactJS serta mulai belajar menggunakan OS Linux.</p> -->
-                        <p>Responsible for managing data exchange between servers and users using JavaScript Frameworks such
-                          as NodeJS and ReactJS and starting to learn to use Linux OS.</p>
+                        <p>
+                          Responsible for managing data exchange between servers
+                          and users using JavaScript Frameworks such as NodeJS
+                          and ReactJS and starting to learn to use Linux OS.
+                        </p>
                         <p></p>
                       </div>
                     </div>
 
                     <!-- Timeline item end -->
-
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Experience end -->
-
         </div>
       </section>
 
       <!--========== MENU ==========-->
-      <section class="menu section bd-container" id="menu">
+      <section class="menu section container" id="menu">
         <span class="section-subtitle">Special</span>
         <h2 class="section-title">Menu of the week</h2>
 
@@ -328,7 +468,7 @@
       </section>
 
       <!--===== APP =======-->
-      <section class="app section bd-container">
+      <section class="app section container">
         <div class="app__container bd-grid">
           <div class="app__data">
             <span class="section-subtitle app__initial">App</span>
@@ -352,7 +492,7 @@
       </section>
 
       <!--========== CONTACT US ==========-->
-      <section class="contact section bd-container" id="contact">
+      <section class="contact section container" id="contact">
         <div class="contact__container bd-grid">
           <div class="contact__data">
             <span class="section-subtitle contact__initial">Let's talk</span>
@@ -371,7 +511,7 @@
     </main>
 
     <!--========== FOOTER ==========-->
-    <footer class="footer section bd-container">
+    <footer class="footer section container">
       <div class="footer__container bd-grid">
         <div class="footer__content">
           <a href="#" class="footer__logo">Tasty Food</a>
@@ -420,7 +560,7 @@
         </div>
       </div>
 
-      <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+      <p class="footer__copy">&#169; 2021 Ihsan Maulana-. All right reserved</p>
     </footer>
 
     <!--========== SCROLL REVEAL ==========-->
