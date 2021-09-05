@@ -1,8 +1,76 @@
 .paralax .layer {
   position: absolute;
-  top: 0;
+  /* top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; */
+}
+
+.paralax .effect-1 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #8a49ff;
+  box-shadow: 2px 2px 2px #25183d;
+  right: 10%;
+  bottom: 10%;
+}
+
+.paralax .effect-2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.paralax .effect-2-2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.effect-2 div {
+  height: 3px;
+  width: 3px;
+  background-color: var(--first-color);
+  margin: 0 3px 8px;
+}
+.effect-2-2 div {
+  height: 3px;
+  width: 3px;
+  background-color: var(--first-color);
+  margin: 0 3px 8px;
+}
+.paralax .effect-4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 30%;
+  top: 15%;
+}
+.paralax .effect-4-5 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #0e926d;
+  left: 28%;
+  top: 15%;
+}
+
+.paralax .effect-5 {
+  height: 50px;
+  width: 50px;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.effect-5 div {
+  width: 1px;
+  background-color: #4dd0e1;
+}
+.animated {
+  animation: spin 10s linear infinite;
 }

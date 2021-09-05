@@ -73,7 +73,7 @@
 
     <title>Ihsan Maulana - Personal Portfolio</title>
   </head>
-  <body>
+  <body >
     <!--========== Preloader start ==========-->
     <div class="loader">
       <div class="bg"></div>
@@ -160,64 +160,38 @@
       </nav>
     </header>
 
-    <main class="l-main">
+    <main id="ripple" class="ripples l-main" >
       <!--========== HOME ==========-->
       <section class="home section container" id="home">
-        <div class="paralax">
-          <img
-            src="/assets/img/Paralax/1.png"
-            d-speed="-2"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/2.png"
-            d-speed="5"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/3.png"
-            d-speed="-4"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/4.png"
-            d-speed="7"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/7.png"
-            d-speed="-5"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/8.png"
-            d-speed="9"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/9.png"
-            d-speed="6"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/10.png"
-            d-speed="2"
-            alt="px1"
-            class="layer"
-          />
-          <img
-            src="/assets/img/Paralax/12.png"
-            d-speed="-6"
-            alt="px1"
-            class="layer"
-          />
+        <div  class="paralax">
+          <div id="paralax" class="effect-1 layer" d-speed="5"></div>
+          <div id="paralax" class="effect-2 layer" d-speed="-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="paralax" class="effect-2-2 layer" d-speed="-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div id="paralax" class="effect-3 layer" d-speed="1"></div>
+          <div id="paralax" class="effect-4 layer" d-speed="-2"></div>
+          <div id="paralax" class="effect-4-5 layer" d-speed="-4"></div>
+          <div id="paralax" class="effect-5 layer" d-speed="-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div class="home__container bd-grid">
           <div class="home__data">
@@ -562,6 +536,17 @@
 
       <p class="footer__copy">&#169; 2021 Ihsan Maulana-. All right reserved</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+    <script>
+          
+    $('#ripple').ripples({
+      resolution: 512,
+      dropRadius: 20,
+      perturbance: 0.01,
+    });
+
+    </script>
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
