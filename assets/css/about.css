@@ -100,12 +100,39 @@
     width: 280px;
     order: -1;
   }
+
+  .about__social {
+    position: absolute;
+  }
+  .social__list {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) {
+  .social__list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.social__list {
+
+.social__list .social__icon {
+  font-size: 1.8rem;
+  width: 40px;
+  justify-content: center;
   display: flex;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.8rem;
+}
+
+a.social__link {
+  color: var(--text-color);
+  transition: transform 0.2s;
+}
+a.social__link:hover {
+  color: var(--first-color);
+  transform: scale(1.85);
 }
